@@ -1,0 +1,10 @@
+C:\MyFolder\University\OOAD\Lab2\MiniKompik16\bin\Debug\MiniKompik16.exe.config
+C:\MyFolder\University\OOAD\Lab2\MiniKompik16\bin\Debug\MiniKompik16.exe
+C:\MyFolder\University\OOAD\Lab2\MiniKompik16\bin\Debug\MiniKompik16.pdb
+C:\MyFolder\University\OOAD\Lab2\MiniKompik16\obj\Debug\MiniKompik16.csproj.AssemblyReference.cache
+C:\MyFolder\University\OOAD\Lab2\MiniKompik16\obj\Debug\MiniKompik16.Form1.resources
+C:\MyFolder\University\OOAD\Lab2\MiniKompik16\obj\Debug\MiniKompik16.Properties.Resources.resources
+C:\MyFolder\University\OOAD\Lab2\MiniKompik16\obj\Debug\MiniKompik16.csproj.GenerateResource.cache
+C:\MyFolder\University\OOAD\Lab2\MiniKompik16\obj\Debug\MiniKompik16.csproj.CoreCompileInputs.cache
+C:\MyFolder\University\OOAD\Lab2\MiniKompik16\obj\Debug\MiniKompik16.exe
+C:\MyFolder\University\OOAD\Lab2\MiniKompik16\obj\Debug\MiniKompik16.pdb
