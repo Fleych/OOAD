@@ -1,0 +1,10 @@
+C:\MyFolder\University\OOAD\Lab3\OrderSystem\bin\Debug\OrderSystem.exe.config
+C:\MyFolder\University\OOAD\Lab3\OrderSystem\bin\Debug\OrderSystem.exe
+C:\MyFolder\University\OOAD\Lab3\OrderSystem\bin\Debug\OrderSystem.pdb
+C:\MyFolder\University\OOAD\Lab3\OrderSystem\obj\Debug\OrderSystem.csproj.AssemblyReference.cache
+C:\MyFolder\University\OOAD\Lab3\OrderSystem\obj\Debug\OrderSystem.Form1.resources
+C:\MyFolder\University\OOAD\Lab3\OrderSystem\obj\Debug\OrderSystem.Properties.Resources.resources
+C:\MyFolder\University\OOAD\Lab3\OrderSystem\obj\Debug\OrderSystem.csproj.GenerateResource.cache
+C:\MyFolder\University\OOAD\Lab3\OrderSystem\obj\Debug\OrderSystem.csproj.CoreCompileInputs.cache
+C:\MyFolder\University\OOAD\Lab3\OrderSystem\obj\Debug\OrderSystem.exe
+C:\MyFolder\University\OOAD\Lab3\OrderSystem\obj\Debug\OrderSystem.pdb
