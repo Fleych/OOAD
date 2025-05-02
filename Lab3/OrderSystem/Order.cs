@@ -43,7 +43,16 @@ namespace OrderSystem
         {
             return status.CancelOrder(this, client, storekeeper, courier);
         }
-        
+
+        public bool DelayOrder(Client client, Storekeeper storekeeper, Courier courier)
+        {
+            return status.DelayOrder(this, client, storekeeper, courier);
+        }
+        public bool RefundOrder(Client client, Storekeeper storekeeper, Courier courier)
+        {
+            return status.RefundOrder(this, client, storekeeper, courier);
+        }
+
 
         //Without pattern
         /*

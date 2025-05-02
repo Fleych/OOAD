@@ -30,5 +30,14 @@ namespace OrderSystem
             client.message = "Ваш заказ номер: " + order.id + " уже отменён";
             return false;
         }
+
+        public override bool DelayOrder(Order order, Client client, Storekeeper storekeeper, Courier courier)
+        {
+            return false;
+        }
+        public override bool RefundOrder(Order order, Client client, Storekeeper storekeeper, Courier courier)
+        {
+            return false;
+        }
     }
 }

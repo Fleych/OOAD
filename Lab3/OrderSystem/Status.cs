@@ -12,5 +12,7 @@ namespace OrderSystem
         public abstract bool WorkDone(Order order, Client client, Storekeeper storekeeper, Courier courier);
         public abstract bool PayOrder(Order order, Client client, Storekeeper storekeeper, Courier courier);
         public abstract bool CancelOrder(Order order, Client client, Storekeeper storekeeper, Courier courier);
+        public abstract bool DelayOrder(Order order, Client client, Storekeeper storekeeper, Courier courier);
+        public abstract bool RefundOrder(Order order, Client client, Storekeeper storekeeper, Courier courier);
     }
 }

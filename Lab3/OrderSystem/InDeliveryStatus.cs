@@ -33,5 +33,19 @@ namespace OrderSystem
             client.message = "Вы не можете отменить заказ номер: " + order.id + " так как он уже в доставке";
             return false;
         }
+        public override bool DelayOrder(Order order, Client client, Storekeeper storekeeper, Courier courier)
+        {
+            order.status = new InDeliveryStatus();
+            client.message = "Ваш заказ номер " + order.id + " задерживается, мы вернём вам 5% от стоимости заказа";
+            courier.message = "За задержку заказа номер " + order.id + " вы будете оштрафованы на много деняг";
+            return true;
+        }
+        public override bool RefundOrder(Order order, Client client, Storekeeper storekeeper, Courier courier)
+        {
+            order.status = new CanceledStatus();
+            client.message = "Ваш заказ номер " + order.id + " не может быть доставлен, мы вернём вам деньги в течени 3 дней";
+            courier.message = "Заказ нормер: " + order.id + " отменён, свяжитесь с менеджером для прояснения ситуации";
+            return true;
+        }
     }
 }

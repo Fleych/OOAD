@@ -109,5 +109,47 @@ namespace OrderSystem
                 label_client_message.Text = client.message;
             }
         }
+
+        private void button_order_delayed_Click(object sender, EventArgs e)
+        {
+            Order selected_order = listBox_courier.SelectedItem as Order;
+            if (selected_order != null)
+            {
+                if (selected_order.DelayOrder(client, storekeeper, courier))
+                {
+                    listBox_courier.Items.Remove(selected_order);
+                    listBox_courier.Items.Add(selected_order);
+                }
+                listBox_client.Items.Add(selected_order);
+                listBox_client.Items.Remove(selected_order);
+                label_client_message.Text = client.message;
+                label_courier_message.Text = courier.message;
+            }
+        }
+
+        private void button_order_impossible_Click(object sender, EventArgs e)
+        {
+            Order selected_order = listBox_courier.SelectedItem as Order;
+            if (selected_order != null)
+            {
+                if (selected_order.RefundOrder(client, storekeeper, courier))
+                {
+                    if (listBox_storekeeper.Items.Contains(selected_order))
+                    {
+                        listBox_storekeeper.Items.Remove(selected_order);
+                    }
+
+                    if (listBox_courier.Items.Contains(selected_order))
+                    {
+                        listBox_courier.Items.Remove(selected_order);
+                    }
+
+                    listBox_client.Items.Add(selected_order);
+                    listBox_client.Items.Remove(selected_order);
+                }
+                label_client_message.Text = client.message;
+                label_courier_message.Text = courier.message;
+            }
+        }
     }
 }

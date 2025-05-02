@@ -46,6 +46,8 @@
             this.label_client_message = new System.Windows.Forms.Label();
             this.label_storekeeper_message = new System.Windows.Forms.Label();
             this.label_courier_message = new System.Windows.Forms.Label();
+            this.button_order_delayed = new System.Windows.Forms.Button();
+            this.button_order_impossible = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBox_client
@@ -133,7 +135,7 @@
             // 
             this.button_order_delivered.Location = new System.Drawing.Point(923, 414);
             this.button_order_delivered.Name = "button_order_delivered";
-            this.button_order_delivered.Size = new System.Drawing.Size(448, 44);
+            this.button_order_delivered.Size = new System.Drawing.Size(139, 44);
             this.button_order_delivered.TabIndex = 9;
             this.button_order_delivered.Text = "Заказ доставлен";
             this.button_order_delivered.UseVisualStyleBackColor = true;
@@ -205,11 +207,33 @@
             this.label_courier_message.Size = new System.Drawing.Size(0, 13);
             this.label_courier_message.TabIndex = 17;
             // 
+            // button_order_delayed
+            // 
+            this.button_order_delayed.Location = new System.Drawing.Point(1077, 414);
+            this.button_order_delayed.Name = "button_order_delayed";
+            this.button_order_delayed.Size = new System.Drawing.Size(139, 44);
+            this.button_order_delayed.TabIndex = 18;
+            this.button_order_delayed.Text = "Доставка задержится";
+            this.button_order_delayed.UseVisualStyleBackColor = true;
+            this.button_order_delayed.Click += new System.EventHandler(this.button_order_delayed_Click);
+            // 
+            // button_order_impossible
+            // 
+            this.button_order_impossible.Location = new System.Drawing.Point(1232, 414);
+            this.button_order_impossible.Name = "button_order_impossible";
+            this.button_order_impossible.Size = new System.Drawing.Size(139, 44);
+            this.button_order_impossible.TabIndex = 19;
+            this.button_order_impossible.Text = "Доставка не возможна";
+            this.button_order_impossible.UseVisualStyleBackColor = true;
+            this.button_order_impossible.Click += new System.EventHandler(this.button_order_impossible_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1382, 474);
+            this.Controls.Add(this.button_order_impossible);
+            this.Controls.Add(this.button_order_delayed);
             this.Controls.Add(this.label_courier_message);
             this.Controls.Add(this.label_storekeeper_message);
             this.Controls.Add(this.label_client_message);
@@ -255,6 +279,8 @@
         private System.Windows.Forms.Label label_client_message;
         private System.Windows.Forms.Label label_storekeeper_message;
         private System.Windows.Forms.Label label_courier_message;
+        private System.Windows.Forms.Button button_order_delayed;
+        private System.Windows.Forms.Button button_order_impossible;
     }
 }
 
